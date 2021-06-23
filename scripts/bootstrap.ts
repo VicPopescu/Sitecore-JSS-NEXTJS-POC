@@ -15,7 +15,7 @@ const disconnected = process.env.JSS_MODE === JSS_MODE_DISCONNECTED;
   Generates the /src/temp/config.js file which contains runtime configuration
   that the app can import and use.
 */
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3333;
 const configOverride = disconnected ? { sitecoreApiHost: `http://localhost:${port}` } : undefined;
 
 generateConfig(configOverride);

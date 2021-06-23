@@ -6,7 +6,7 @@ const disconnectedServerUrl = `http://localhost:${process.env.PROXY_PORT || 3042
 const isDisconnected = process.env.JSS_MODE === JSS_MODE_DISCONNECTED;
 
 // A public URL (and uses below) is required for Sitecore Experience Editor support.
-// This is set to http://localhost:3000 by default. See .env for more details.
+// This is set to http://localhost:3333 by default. See .env for more details.
 const publicUrl = process.env.PUBLIC_URL;
 
 const nextConfig = {
